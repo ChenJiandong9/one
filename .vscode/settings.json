@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "stm32f10x.h": "c",
+        "oled.h": "c",
+        "stdlib.h": "c",
+        "delay.h": "c",
+        "oledfont.h": "c",
+        "sys.h": "c",
+        "key.h": "c",
+        "usart1.h": "c",
+        "task.h": "c",
+        "keytask.h": "c",
+        "motor.h": "c",
+        "myi2c.h": "c",
+        "ina219.h": "c",
+        "dht11.h": "c",
+        "dht11task.h": "c",
+        "bh1750.h": "c",
+        "freertos.h": "c",
+        "rgb.h": "c"
+    }
+}
