@@ -17,6 +17,8 @@
         "dht11task.h": "c",
         "bh1750.h": "c",
         "freertos.h": "c",
-        "rgb.h": "c"
+        "rgb.h": "c",
+        "mytask.h": "c",
+        "queue.h": "c"
     }
 }

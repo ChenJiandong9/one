@@ -1,3 +1,7 @@
+/*
+使用资源MyI2C
+*/
+
 #include "INA219.h"
 
 void INA219_Init(void)

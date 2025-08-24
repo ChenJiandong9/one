@@ -1,7 +1,12 @@
+/*
+使用资源MyI2C
+*/
 #include "BH1750.h"
+
 void BH1750_Init(void)
 {
     MyI2C_Init();
+    BH1750_Power();
 }
 
 void BH1750_Power(void)

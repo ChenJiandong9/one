@@ -1,3 +1,6 @@
+/*
+使用资源B10，B11
+*/
 #include "MyI2C.h"
 void MyI2C_W_CLK(uint8_t BitValue)
 {
@@ -91,8 +94,59 @@ uint8_t MyI2C_ReceiveAck(void)
  */
 uint8_t MyI2C_ADDWR(uint8_t addr, uint8_t w_r)
 {
-    if (w_r==1)
-        return ((addr<<1) | 0x01 );
+    if (w_r == 1)
+        return ((addr << 1) | 0x01);
     else
-        return (addr<<1);
+        return (addr << 1);
+}
+
+uint8_t MyI2C_Write(uint8_t addr, uint8_t *data, uint16_t len)
+{
+    MyI2C_Start();
+    MyI2C_SendByte(MyI2C_ADDWR(addr, MyI2C_WRITE));
+    if (MyI2C_ReceiveAck())
+    {
+        MyI2C_Stop();
+        return 0;
+    }
+    for (uint16_t i = 0; i < len; i++)
+    {
+        MyI2C_SendByte(data[i]);
+        if (MyI2C_ReceiveAck())
+        {
+            MyI2C_Stop();
+            return 0;
+        }
+    }
+    MyI2C_Stop();
+    return 1;
+}
+uint8_t MyI2c_Read(uint8_t addr, uint8_t *data, uint16_t len)
+{
+    MyI2C_Start();
+    MyI2C_SendByte(MyI2C_ADDWR(addr, MyI2C_READ));
+    if (MyI2C_ReceiveAck())
+    {
+        MyI2C_Stop();
+        return 0;
+    }
+    for (uint16_t i = 0; i < len; i++)
+    {
+        data[i] = MyI2C_ReceiveByte();
+        MyI2C_SendAck(i != len - 1 ? 0 : 1);
+    }
+    return 1;
+}
+uint8_t MyI2c_ReadReg(uint8_t addr, uint8_t regAddr, uint8_t *data, uint16_t len)
+{
+
+    if (!MyI2C_Write(addr, &regAddr, 1))
+    {
+        return 0;
+    }
+    if (!MyI2c_Read(addr, data, len))
+    {
+        return 0;
+    }
+    return 1;
 }
