@@ -2,6 +2,8 @@
 
 SemaphoreHandle_t xSemaphore_MyI2C;
 TaskHandle_t ReadLuxTask_Handle, ReadTempAndHumTask_Handle;
+
+uint8_t Message[2];
 void start_task(void *pvParameters)
 {
     taskENTER_CRITICAL(); // 临界区开始
@@ -30,15 +32,21 @@ void ReadLuxTask(void *pvParameters)
     uint8_t Buff[2];
     // 发送测量指令并读取
     uint8_t command = BH1750_ORDER_MEASUREMENT;
+    while (1)
+    {
+        /* code */
 
-    // 通过xSemaphore_MyI2C信号避免冲突
-    xSemaphoreTake(xSemaphore_MyI2C, portMAX_DELAY);
-    MyI2C_Write(BH1750_ADDRESS, &command, 1);
-    xSemaphoreGive(xSemaphore_MyI2C);
-    vTaskDelay(19);
-    xSemaphoreTake(xSemaphore_MyI2C, portMAX_DELAY);
-    MyI2c_Read(BH1750_ADDRESS, Buff, 2);
-    xSemaphoreGive(xSemaphore_MyI2C);
+        // 通过xSemaphore_MyI2C信号避免冲突
+        xSemaphoreTake(xSemaphore_MyI2C, portMAX_DELAY);
+        MyI2C_Write(BH1750_ADDRESS, &command, 1);
+        xSemaphoreGive(xSemaphore_MyI2C);
+        vTaskDelay(19);
+        xSemaphoreTake(xSemaphore_MyI2C, portMAX_DELAY);
+        MyI2c_Read(BH1750_ADDRESS, Buff, 2);
+        xSemaphoreGive(xSemaphore_MyI2C);
 
-    (float)((Buff[0] << 8) | Buff[1]); //!!!!!!!!!!!!!!!!!!
+        // USART1_Send(Buff, 2); //!!!!!!!!!!!!!!!!!!
+
+        vTaskDelay(2000);
+    }
 }

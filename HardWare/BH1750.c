@@ -3,12 +3,6 @@
 */
 #include "BH1750.h"
 
-void BH1750_Init(void)
-{
-    MyI2C_Init();
-    BH1750_Power();
-}
-
 void BH1750_Power(void)
 {
     MyI2C_Start();
@@ -26,6 +20,12 @@ void BH1750_Power(void)
     }
     MyI2C_Stop();
 }
+void BH1750_Init(void)
+{
+    MyI2C_Init();
+    BH1750_Power();
+}
+
 void BH1750_Measurement(void)
 {
     MyI2C_Start();

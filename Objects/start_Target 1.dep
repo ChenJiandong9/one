@@ -712,7 +712,7 @@ I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 F (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)()
-F (.\User\main.c)(0x68A5BCB2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Library -I .\Start -I .\User -I .\freertos -I .\freertos\port -I .\freertos\inc -I .\freertos\src -I .\HardWare -I .\MyTask-I.\RTE\_Target_1-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\User\main.c)(0x68AB0255)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Library -I .\Start -I .\User -I .\freertos -I .\freertos\port -I .\freertos\inc -I .\freertos\src -I .\HardWare -I .\MyTask-I.\RTE\_Target_1-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -741,11 +741,25 @@ I (.\Library\stm32f10x_tim.h)(0x4D783BB4)
 I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
+I (.\freertos\inc\FreeRTOS.h)(0x66962B64)
+I (D:\keil5\ARM\ARMCC\include\stddef.h)(0x588B8344)
+I (.\freertos\FreeRTOSConfig.h)(0x68A2942E)
+I (.\freertos\inc\projdefs.h)(0x66962B64)
+I (.\freertos\inc\portable.h)(0x66962B64)
+I (.\freertos\inc\deprecated_definitions.h)(0x66962B64)
+I (.\freertos\port\portmacro.h)(0x66962B64)
+I (.\freertos\inc\mpu_wrappers.h)(0x66962B64)
+I (.\freertos\inc\task.h)(0x66962B64)
+I (.\freertos\inc\list.h)(0x66962B64)
 I (.\HardWare\usart1.h)(0x68A1CAB1)
 I (.\HardWare\delay.h)(0x688490B4)
-I (.\HardWare\RGB.h)(0x68A59868)
-I (.\HardWare\DMA.c)(0x68A57CA4)
-I (.\HardWare\DMA.h)(0x68A543B6)
+I (.\HardWare\BH1750.h)(0x68A32890)
+I (.\HardWare\MyI2C.h)(0x68AAD8C3)
+I (.\MyTask\MyTask.h)(0x68AAFB21)
+I (.\freertos\inc\queue.h)(0x66962B64)
+I (.\freertos\inc\semphr.h)(0x66962B64)
+I (.\MyTask\DHT11Task.h)(0x68A1D725)
+I (.\HardWare\DHT11.h)(0x68AADD4F)
 F (.\User\stm32f10x_conf.h)(0x4D99A59E)()
 F (.\User\stm32f10x_it.c)(0x68995F40)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Library -I .\Start -I .\User -I .\freertos -I .\freertos\port -I .\freertos\inc -I .\freertos\src -I .\HardWare -I .\MyTask-I.\RTE\_Target_1-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
 I (User\stm32f10x_it.h)(0x4D99A59E)
@@ -1158,9 +1172,9 @@ I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 I (HardWare\delay.h)(0x688490B4)
-F (.\HardWare\INA219.c)(0x68A31823)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Library -I .\Start -I .\User -I .\freertos -I .\freertos\port -I .\freertos\inc -I .\freertos\src -I .\HardWare -I .\MyTask-I.\RTE\_Target_1-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\ina219.o --omf_browse .\objects\ina219.crf --depend .\objects\ina219.d)
-I (HardWare\INA219.h)(0x68A0630F)
-I (HardWare\MyI2C.h)(0x68A31353)
+F (.\HardWare\INA219.c)(0x68AADD4F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Library -I .\Start -I .\User -I .\freertos -I .\freertos\port -I .\freertos\inc -I .\freertos\src -I .\HardWare -I .\MyTask-I.\RTE\_Target_1-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\ina219.o --omf_browse .\objects\ina219.crf --depend .\objects\ina219.d)
+I (HardWare\INA219.h)(0x68AA9A55)
+I (HardWare\MyI2C.h)(0x68AAD8C3)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -1190,8 +1204,8 @@ I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 I (HardWare\Delay.h)(0x688490B4)
-F (.\HardWare\MyI2C.c)(0x68A32C6A)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Library -I .\Start -I .\User -I .\freertos -I .\freertos\port -I .\freertos\inc -I .\freertos\src -I .\HardWare -I .\MyTask-I.\RTE\_Target_1-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\myi2c.o --omf_browse .\objects\myi2c.crf --depend .\objects\myi2c.d)
-I (HardWare\MyI2C.h)(0x68A31353)
+F (.\HardWare\MyI2C.c)(0x68AAD933)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Library -I .\Start -I .\User -I .\freertos -I .\freertos\port -I .\freertos\inc -I .\freertos\src -I .\HardWare -I .\MyTask-I.\RTE\_Target_1-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\myi2c.o --omf_browse .\objects\myi2c.crf --depend .\objects\myi2c.d)
+I (HardWare\MyI2C.h)(0x68AAD8C3)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -1222,7 +1236,7 @@ I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 I (HardWare\Delay.h)(0x688490B4)
 F (.\HardWare\DHT11.c)(0x68A1C9F6)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Library -I .\Start -I .\User -I .\freertos -I .\freertos\port -I .\freertos\inc -I .\freertos\src -I .\HardWare -I .\MyTask-I.\RTE\_Target_1-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\dht11.o --omf_browse .\objects\dht11.crf --depend .\objects\dht11.d)
-I (HardWare\DHT11.h)(0x68A1C9F6)
+I (HardWare\DHT11.h)(0x68AADD4F)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -1252,7 +1266,7 @@ I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 I (HardWare\delay.h)(0x688490B4)
-F (.\HardWare\BH1750.c)(0x68A33098)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Library -I .\Start -I .\User -I .\freertos -I .\freertos\port -I .\freertos\inc -I .\freertos\src -I .\HardWare -I .\MyTask-I.\RTE\_Target_1-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\bh1750.o --omf_browse .\objects\bh1750.crf --depend .\objects\bh1750.d)
+F (.\HardWare\BH1750.c)(0x68AAFC11)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Library -I .\Start -I .\User -I .\freertos -I .\freertos\port -I .\freertos\inc -I .\freertos\src -I .\HardWare -I .\MyTask-I.\RTE\_Target_1-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\bh1750.o --omf_browse .\objects\bh1750.crf --depend .\objects\bh1750.d)
 I (HardWare\BH1750.h)(0x68A32890)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
@@ -1282,7 +1296,7 @@ I (.\Library\stm32f10x_tim.h)(0x4D783BB4)
 I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
-I (HardWare\MyI2C.h)(0x68A31353)
+I (HardWare\MyI2C.h)(0x68AAD8C3)
 I (HardWare\Delay.h)(0x688490B4)
 F (.\HardWare\RGB.c)(0x68A6811D)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Library -I .\Start -I .\User -I .\freertos -I .\freertos\port -I .\freertos\inc -I .\freertos\src -I .\HardWare -I .\MyTask-I.\RTE\_Target_1-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\rgb.o --omf_browse .\objects\rgb.crf --depend .\objects\rgb.d)
 I (HardWare\RGB.h)(0x68A59868)
@@ -1348,7 +1362,7 @@ I (.\Library\stm32f10x_tim.h)(0x4D783BB4)
 I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
-I (.\HardWare\DHT11.h)(0x68A1C9F6)
+I (.\HardWare\DHT11.h)(0x68AADD4F)
 I (.\HardWare\delay.h)(0x688490B4)
 I (.\freertos\inc\FreeRTOS.h)(0x66962B64)
 I (D:\keil5\ARM\ARMCC\include\stddef.h)(0x588B8344)
@@ -1361,3 +1375,51 @@ I (.\freertos\inc\mpu_wrappers.h)(0x66962B64)
 I (.\freertos\inc\task.h)(0x66962B64)
 I (.\freertos\inc\list.h)(0x66962B64)
 I (.\HardWare\USART1.h)(0x68A1CAB1)
+F (.\MyTask\MyTask.c)(0x68AB012A)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Library -I .\Start -I .\User -I .\freertos -I .\freertos\port -I .\freertos\inc -I .\freertos\src -I .\HardWare -I .\MyTask-I.\RTE\_Target_1-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\mytask.o --omf_browse .\objects\mytask.crf --depend .\objects\mytask.d)
+I (MyTask\MyTask.h)(0x68AAFB21)
+I (.\Start\stm32f10x.h)(0x4D783CB4)
+I (.\Start\core_cm3.h)(0x4D523B58)
+I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\Start\system_stm32f10x.h)(0x4D783CAA)
+I (.\User\stm32f10x_conf.h)(0x4D99A59E)
+I (.\Library\stm32f10x_adc.h)(0x4D783BB4)
+I (.\Library\stm32f10x_bkp.h)(0x4D783BB4)
+I (.\Library\stm32f10x_can.h)(0x4D783BB4)
+I (.\Library\stm32f10x_cec.h)(0x4D783BB4)
+I (.\Library\stm32f10x_crc.h)(0x4D783BB4)
+I (.\Library\stm32f10x_dac.h)(0x4D783BB4)
+I (.\Library\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (.\Library\stm32f10x_dma.h)(0x4D783BB4)
+I (.\Library\stm32f10x_exti.h)(0x4D783BB4)
+I (.\Library\stm32f10x_flash.h)(0x4D783BB4)
+I (.\Library\stm32f10x_fsmc.h)(0x4D783BB4)
+I (.\Library\stm32f10x_gpio.h)(0x4D783BB4)
+I (.\Library\stm32f10x_i2c.h)(0x4D783BB4)
+I (.\Library\stm32f10x_iwdg.h)(0x4D783BB4)
+I (.\Library\stm32f10x_pwr.h)(0x4D783BB4)
+I (.\Library\stm32f10x_rcc.h)(0x4D783BB4)
+I (.\Library\stm32f10x_rtc.h)(0x4D783BB4)
+I (.\Library\stm32f10x_sdio.h)(0x4D783BB4)
+I (.\Library\stm32f10x_spi.h)(0x4D783BB4)
+I (.\Library\stm32f10x_tim.h)(0x4D783BB4)
+I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
+I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
+I (.\Library\misc.h)(0x4D783BB4)
+I (.\freertos\inc\FreeRTOS.h)(0x66962B64)
+I (D:\keil5\ARM\ARMCC\include\stddef.h)(0x588B8344)
+I (.\freertos\FreeRTOSConfig.h)(0x68A2942E)
+I (.\freertos\inc\projdefs.h)(0x66962B64)
+I (.\freertos\inc\portable.h)(0x66962B64)
+I (.\freertos\inc\deprecated_definitions.h)(0x66962B64)
+I (.\freertos\port\portmacro.h)(0x66962B64)
+I (.\freertos\inc\mpu_wrappers.h)(0x66962B64)
+I (.\freertos\inc\task.h)(0x66962B64)
+I (.\freertos\inc\list.h)(0x66962B64)
+I (.\freertos\inc\queue.h)(0x66962B64)
+I (.\freertos\inc\semphr.h)(0x66962B64)
+I (MyTask\DHT11Task.h)(0x68A1D725)
+I (.\HardWare\DHT11.h)(0x68AADD4F)
+I (.\HardWare\delay.h)(0x688490B4)
+I (.\HardWare\USART1.h)(0x68A1CAB1)
+I (.\HardWare\BH1750.h)(0x68A32890)
+I (.\HardWare\MyI2C.h)(0x68AAD8C3)

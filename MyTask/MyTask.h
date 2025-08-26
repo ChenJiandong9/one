@@ -11,4 +11,5 @@
 #define HIGH_PRIORITY 3
 #define MID_PRIORITY 2
 #define LOW_PRIORITY 1
+void ReadLuxTask(void *pvParameters);
 #endif

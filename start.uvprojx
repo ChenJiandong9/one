@@ -920,6 +920,11 @@
               <FileType>1</FileType>
               <FilePath>.\MyTask\DHT11Task.c</FilePath>
             </File>
+            <File>
+              <FileName>MyTask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MyTask\MyTask.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
